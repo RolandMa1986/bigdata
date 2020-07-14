@@ -17,18 +17,21 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <spark.version>2.4.6</spark.version>
+        <scala.version>2.12</scala.version>
+        <mongospark.version>2.4.2</mongospark.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.mongodb.spark</groupId>
-            <artifactId>mongo-spark-connector_2.11</artifactId>
-            <version>2.4.2</version>
+            <artifactId>mongo-spark-connector_${scala.version}</artifactId>
+            <version>${mongospark.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-core_2.11</artifactId>
-            <version>2.4.2</version>
+            <artifactId>spark-core_${scala.version}</artifactId>
+            <version>${spark.version}</version>
             <exclusions>
             <!--解决本地运行时 SLF4J: Class path contains multiple SLF4J bindings. 的 warning-->
             <exclusion>
@@ -39,8 +42,8 @@
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-sql_2.11</artifactId>
-            <version>2.4.2</version>
+            <artifactId>spark-sql_${scala.version}</artifactId>
+            <version>${spark.version}</version>
         </dependency>
         <!--Fix java.lang.NoClassDefFoundError: org/codehaus/janino/InternalCompilerException-->
         <dependency>
@@ -63,7 +66,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.14</version>
+            <version>1.18.10</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <build>
@@ -103,19 +107,6 @@
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://maven.aliyun.com/repository/spring</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <!--腾讯仓库-->
-        <repository>
-            <id>bintray-qcloud-maven-repo</id>
-            <name>qcloud-maven-repo</name>
-            <url>https://dl.bintray.com/qcloud/maven-repo/</url>
-            <layout>default</layout>
             <releases>
                 <enabled>true</enabled>
             </releases>
