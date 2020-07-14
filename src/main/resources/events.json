@@ -1,0 +1,16 @@
+  {"id": 1,"name": "register","userId": 1,"eventTime": "2020-1-1"}
+  {"id": 2,"name": "register","userId": 2,"eventTime": "2020-1-1"}
+  {"id": 3,"name": "register","userId": 3,"eventTime": "2020-1-2"}
+  {"id": 4,"name": "register","userId": 4,"eventTime": "2020-1-2"}
+  {"id": 5,"name": "register","userId": 5,"eventTime": "2020-1-2"}
+  {"id": 6,"name": "register","userId": 6,"eventTime": "2020-1-3"}
+  {"id": 7,"name": "register","userId": 7,"eventTime": "2020-1-4"}
+  {"id": 8,"name": "view","userId": 1,"eventTime": "2020-1-1"}
+  {"id": 9,"name": "view","userId": 2,"eventTime": "2020-1-2"}
+  {"id": 10,"name": "view","userId": 3,"eventTime": "2020-1-2"}
+  {"id": 11,"name": "view","userId": 4,"eventTime": "2020-1-3"}
+  {"id": 12,"name": "pay","userId": 1,"eventTime": "2020-1-1"}
+  {"id": 13,"name": "pay","userId": 2,"eventTime": "2020-1-3"}
+  {"id": 14,"name": "pay","userId": 3,"eventTime": "2020-1-2"}
+  {"id": 15,"name": "play","userId": 3,"eventTime": "2020-1-2"}
+  {"id": 16,"name": "view","userId": 2,"eventTime": "2020-1-2"}
