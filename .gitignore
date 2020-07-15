@@ -1,2 +1,10 @@
 /target/
 /.idea/
+### IntelliJ IDEA, https://intellij-support.jetbrains.com/hc/en-us/articles/206544839 ###
+.idea/libraries
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/uiDesigner.xml
+*.iws
+*.iml
+*.ipr
